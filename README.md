@@ -1,5 +1,7 @@
 # Generic Number Comparator Benchmark
 
+Testing the performance of ```Collections.max(list)``` with various comparators.
+
 ## Run
 
 ```
