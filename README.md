@@ -14,10 +14,10 @@ mvn clean install;java -jar target/benchmarks.jar
 | Benchmark                          | Score (ops/s) - Integers only    | Score (ops/s) - Integers and Doubles |
 | ---------------------------------- | -------------------------------- | ------------------------------------ |
 | Original comparator                | 3172804.081                      | X                                    |
-| Long.compare                       | 3480229.820                      | X                                    |
-| Double.compare                     | 2756652.584                      | 2340389.827                          |
-| Double.compare / Long.compare      | 2881121.264                      | 1899611.262                          |
-| BigDecimal.compare + Inf/NaN check |  104337.061                      |   74441.372                          |
+| [Long.compare](https://github.com/dodie/generic-number-comparator-benchmark/blob/master/src/main/java/hu/awm/test/comparison/LongValueBasedComparison.java)                       | 3480229.820                      | X                                    |
+| [Double.compare](https://github.com/dodie/generic-number-comparator-benchmark/blob/master/src/main/java/hu/awm/test/comparison/DoubleValueBasedComparison.java)                     | 2756652.584                      | 2340389.827                          |
+| [Double.compare / Long.compare](https://github.com/dodie/generic-number-comparator-benchmark/blob/master/src/main/java/hu/awm/test/comparison/LongAndDoubleBasedComparison.java)      | 2881121.264                      | 1899611.262                          |
+| [BigDecimal.compare + Inf/NaN check](https://github.com/dodie/generic-number-comparator-benchmark/blob/master/src/main/java/hu/awm/test/comparison/BigDecimalBasedComparison.java) |  104337.061                      |   74441.372                          |
 
 
 Original results:
