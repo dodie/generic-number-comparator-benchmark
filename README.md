@@ -11,7 +11,7 @@ mvn clean install;java -jar target/benchmarks.jar
 ## Results
 
 
-| Benchmark                          | Score (ops/s) - Integers only    | Score (ops/s) - Integers and Doubles |
+| Benchmark                          | Score (ops/s) - Comparing Integers only    | Score (ops/s) - Comparing Integers and Doubles |
 | ---------------------------------- | -------------------------------- | ------------------------------------ |
 | Original comparator                | 3172804.081                      | X                                    |
 | [Long.compare](https://github.com/dodie/generic-number-comparator-benchmark/blob/master/src/main/java/hu/awm/test/comparison/LongValueBasedComparison.java)                       | 3480229.820                      | X                                    |
